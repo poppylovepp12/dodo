@@ -77,6 +77,7 @@ border-radius:25px;
 text-decoration:none;
 margin-top:15px;
 font-weight:500;
+transition: all 0.3s ease;
 }
 
 .btn-outline{
@@ -88,6 +89,18 @@ color:var(--dark);
 .btn-main{
 background:var(--main);
 color:#fff;
+}
+
+/* --- อนิเมชั่นกะพริบช้าๆ --- */
+@keyframes softPulse {
+  0% { transform: scale(1); box-shadow: 0 4px 10px var(--glow); }
+  50% { transform: scale(1.03); box-shadow: 0 0 15px var(--main); }
+  100% { transform: scale(1); box-shadow: 0 4px 10px var(--glow); }
+}
+
+.pulse-btn {
+  animation: softPulse 2s infinite ease-in-out;
+  border: 2px solid var(--main) !important;
 }
 
 .step{
@@ -172,7 +185,7 @@ Welcome to mood diary 𐙚 ⭐️ *
 <div class="badge">💬 เว็บปรึกษา</div>
 </div>
 
-<a href="https://mood-journal.youware.app" class="btn btn-outline">
+<a href="https://mood-journal.youware.app" class="btn btn-outline pulse-btn">
 ⭐️ บันทึกอารมณ์ คลิ๊ก ✨
 </a>
 </div>
@@ -195,7 +208,7 @@ Welcome to mood diary 𐙚 ⭐️ *
 <h2>📝 ร้องเพลงและเต้น</h2>
 <p style="margin: 10px 0; font-size: 14px; color: var(--dark);">• รวมคลิปเต้น คนรักสุขภาพ</p>
 <div class="step"><div class="step-num">💃🏻</div><div>เต้นเพื่อสุขภาพ</div></div>
-<a href="https://youtube.com/playlist?list=PLoo9plTQMH5-kcRS2rJKBR9P-Engulz3q&si=EmSuimBzu-tavqFS" class="btn btn-main">ดูเพลย์ลิสต์เต้น</a>
+<a href="https://youtube.com/playlist?list=PLoo9plTQMH5-s9iTw7_C9-qlmPgNJbrKA&si=wqMHFXrGGAB4KVQQ" class="btn btn-main">ดูเพลย์ลิสต์เต้น</a>
 </div>
 
 <div class="section">
