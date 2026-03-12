@@ -9,12 +9,12 @@
 
 <style>
 :root{
-/* ปรับเป็นโทนฟ้าพาสเทลตามที่ชอบ */
---bg:#E3F2FD;
---main:#90CAF9;
---dark:#42A5F5;
+/* แก้ไขเฉพาะ CSS Palette เป็นโทนฟ้าพาสเทล */
+--bg:#EBF5FF; 
+--main:#A2D2FF;
+--dark:#5B99C2;
 --white:#FFFFFF;
---glow:rgba(144,202,249,0.4);
+--glow:rgba(162, 210, 255, 0.4);
 }
 
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Mitr',sans-serif;}
@@ -40,7 +40,7 @@ box-shadow:0 8px 20px rgba(0,0,0,0.05);
 border:2px solid var(--main);
 }
 
-h1,h2,h3{color:var(--dark); margin-bottom:15px;}
+h1,h2,h3{color:var(--dark);}
 .center{text-align:center;}
 
 .logo{
@@ -49,7 +49,6 @@ border-radius:50%;
 overflow:hidden;
 margin:0 auto 20px;
 box-shadow:0 6px 20px var(--glow);
-background:#fff;
 }
 
 .logo img{width:100%;height:100%;object-fit:cover;}
@@ -79,7 +78,6 @@ border-radius:25px;
 text-decoration:none;
 margin-top:15px;
 font-weight:500;
-transition: 0.3s;
 }
 
 .btn-outline{
@@ -109,7 +107,6 @@ display:flex;
 align-items:center;
 justify-content:center;
 font-size:13px;
-flex-shrink: 0;
 }
 
 .price-row{
@@ -119,7 +116,6 @@ margin-bottom:10px;
 background:#f7fbff;
 padding:10px 15px;
 border-radius:15px;
-align-items: center;
 }
 
 .price-tag{
@@ -152,25 +148,10 @@ background:#fff;
 text-decoration:none;
 color:var(--dark);
 font-size:13px;
-border:1px solid #e3f2fd;
+border:1px solid #e1f0ff;
 }
 
 .small{font-size:12px;opacity:.7;margin-top:10px;}
-
-/* สไตล์เพิ่มเติมสำหรับกฎของร้าน */
-.rule-item {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 8px;
-    padding-left: 15px;
-    position: relative;
-}
-.rule-item::before {
-    content: "•";
-    color: var(--main);
-    position: absolute;
-    left: 0;
-}
 </style>
 </head>
 
@@ -185,56 +166,45 @@ border:1px solid #e3f2fd;
 
 <h1>mood diary</h1>
 <p style="color:var(--dark);opacity:.8;margin:10px 0 20px;">
-บันทึกอารมณ์ประจำวัน วันนี้คุณรู้สึกอย่างไร ☁️
+Welcome to mood diary 𐙚 ⭐️ *
 </p>
 
 <div class="badges">
-<div class="badge">🎨 เว็บแอพพรีเมียม</div>
-<div class="badge">🎮 เว็บรับเติมเกมส์</div>
-<div class="badge">📝 เว็บรับทำป้าย</div>
+<div class="badge">💻 เว็บแอพพรีเมียม</div>
+<div class="badge">☁️ เว็บอารมณ์ความรู้สึก</div>
+<div class="badge">🌿 เว็บปรึกษา</div>
 </div>
 
-<a href="https://julie-vwb.github.io/pinkjulie-land/" class="btn btn-outline">
-ออกกำลังกาย คลายความเครียด คลิ๊ก ✨
+<a href="https://mood-journal.youware.app" target="_blank" class="btn btn-outline">
+⭐️ บันทึกอารมณ์ คลิ๊ก ✨
 </a>
 </div>
 
 <div class="section">
-<h2>📋 ขั้นตอนการสั่ง</h2>
+<h2> ⊹🍮⁺ playlist song</h2>
 
-<div class="step"><div class="step-num">1</div><div>กรอกฟอร์ม เขียนรายละเอียดร้านค้า</div></div>
-<div class="step"><div class="step-num">2</div><div>ใส่ลิงก์ ตัวอย่างงาน/โลโก้มาให้พร้อม</div></div>
-<div class="step"><div class="step-num">3</div><div>ส่งงานให้เช็ค แจ้งยอด และชำระเงิน</div></div>
-<div class="step"><div class="step-num">4</div><div>รอรับลิงก์งานได้เลยค่า</div></div>
+<div class="step"><div class="step-num">1</div><div><a href="https://youtube.com/playlist?list=PLxzyv_DPfUCl3pAj5a4UFqxQhR3VLoL8c&si=VWJDXd9FmzBX1BET" style="text-decoration:none;color:inherit;">รวมเพลงสากล เทสดี 💌ྀི⋆.˚</a></div></div>
+<div class="step"><div class="step-num">2</div><div><a href="https://youtube.com/playlist?list=PLxzyv_DPfUCkhZR5rLBzfyrxTcjYzx8oc&si=le4f8j9QqKBzdePW" style="text-decoration:none;color:inherit;">รวมเพลงไทย</a></div></div>
+<div class="step"><div class="step-num">3</div><div><a href="https://open.spotify.com/playlist/38ExmI7QMnjFVUH4dEBfRV?si=RskK5axtRSG1K6hWOr9UWQ&pi=FhQtRruQTcKgn" style="text-decoration:none;color:inherit;">Spotify Link</a></div></div>
 
-<p class="small" style="margin-top:15px; color:var(--dark);">* รองาน 4-8 ชม. (งานเร่งบวกเพิ่ม 1 เท่า)</p>
-<a href="https://lin.ee/PdNrw0w" class="btn btn-main">สั่งซื้อผ่าน Line</a>
+<a href="https://youtube.com/playlist?list=PLxzyv_DPfUCl3pAj5a4UFqxQhR3VLoL8c&si=VWJDXd9FmzBX1BET" class="btn btn-main">ฟังเพลงทั้งหมด</a>
 </div>
 
 <div class="section">
-<h2>📍 กฎของร้าน 📍</h2>
-<div class="rule-item">ถ้าโอนเงินแล้วทางร้านไม่คืนเงินทุกกรณีนะคะ</div>
-<div class="rule-item">หากยกเลิกงานหลังส่งบรีฟ (กรณีเริ่มงานแล้ว) คืนเงิน 50%</div>
-<div class="rule-item">หากยกเลิกหลังจากเช็คงาน = ไม่คืนเงินและส่งงานตามปกติ</div>
-</div>
+<h2>🐈‍⬛𓂂 แนะนำซีรีส์</h2>
+<div class="price-row"><span>รวมซีรีส์ใหม่ จีน ไทย เกาหลี</span></div>
 
-<div class="section">
-<h2>💰 ตัวอย่างผลงาน</h2>
+<h2 style="margin-top:20px;">🍥 ออกกำลังกาย คลายเครียด</h2>
+<div class="price-row"><span>รวมคลิปดีต่อสุขภาพ 𓂋 g🥚🥚d</span><span class="price-tag">คลิก</span></div>
+<div class="price-row"><span>📍 ร้องเพลงและเต้น</span><span class="price-tag">คลิก</span></div>
 
-<div class="price-row"><span>Mahatep Shop</span><a href="https://julie-vwb.github.io/mahatep-shop/" class="price-tag">ดูงาน</a></div>
-<div class="price-row"><span>Cxllme Store</span><a href="https://julie-vwb.github.io/cxllmestore-shop/" class="price-tag">ดูงาน</a></div>
-<div class="price-row"><span>Babybear Design</span><a href="https://julie-vwb.github.io/babybear-design/" class="price-tag">ดูงาน</a></div>
-<div class="price-row"><span>Luna Webstudio</span><a href="https://julie-vwb.github.io/luna-webstudio/" class="price-tag">ดูงาน</a></div>
-
-<a href="https://julie-vwb.github.io/meow-font/" class="btn btn-main">ดูฟอนต์ทั้งหมด</a>
+<a href="https://youtube.com/playlist?list=PLloo9plTQMH5-NyyaUKxtdEFL_Ek_ESPWf&si=uZldgDkpTEytl8yI" class="btn btn-main">ดูคลิปออกกำลังกาย</a>
 </div>
 
 <div class="footer">
 <a href="https://lin.ee/PdNrw0w" class="btn btn-main">ติดต่อสอบถามคลิก 🎀</a>
 
 <div class="socials">
-<a href="#">Facebook</a>
-<a href="#">Instagram</a>
 <a href="https://lin.ee/PdNrw0w">LINE</a>
 </div>
 
