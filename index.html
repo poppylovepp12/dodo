@@ -9,12 +9,12 @@
 
 <style>
 :root{
-/* ปรับเป็นโทนฟ้าพาสเทลตามที่ชอบ */
---bg:#F0F8FF; 
---main:#A2D2FF;
---dark:#5B9BD5;
+/* แก้ไขโทนสีเป็นฟ้าพาสเทลตามความชอบ */
+--bg:#E3F2FD;
+--main:#90CAF9;
+--dark:#546E7A;
 --white:#FFFFFF;
---glow:rgba(162,210,255,0.4);
+--glow:rgba(144,202,249,0.4);
 }
 
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Mitr',sans-serif;}
@@ -78,6 +78,7 @@ border-radius:25px;
 text-decoration:none;
 margin-top:15px;
 font-weight:500;
+transition: 0.3s;
 }
 
 .btn-outline{
@@ -113,7 +114,7 @@ font-size:13px;
 display:flex;
 justify-content:space-between;
 margin-bottom:10px;
-background:#fcfdff;
+background:#f5fbff;
 padding:10px 15px;
 border-radius:15px;
 }
@@ -148,7 +149,7 @@ background:#fff;
 text-decoration:none;
 color:var(--dark);
 font-size:13px;
-border:1px solid #eef7ff;
+border:1px solid #e1f5fe;
 }
 
 .small{font-size:12px;opacity:.7;margin-top:10px;}
@@ -172,10 +173,10 @@ Welcome to mood diary 𐙚 ⭐️ *
 <div class="badges">
 <div class="badge">💻 เว็บแอพพรีเมียม</div>
 <div class="badge">☁️ เว็บอารมณ์ความรู้สึก</div>
-<div class="badge">🌿 เว็บปรึกษา</div>
+<div class="badge">🤝 เว็บปรึกษา</div>
 </div>
 
-<a href="https://mood-journal.youware.app" class="btn btn-outline">
+<a href="https://mood-journal.youware.app" target="_blank" class="btn btn-outline">
 ⭐️ บันทึกอารมณ์ คลิ๊ก ✨
 </a>
 </div>
@@ -183,31 +184,38 @@ Welcome to mood diary 𐙚 ⭐️ *
 <div class="section">
 <h2>⊹🍮⁺ playlist song</h2>
 
-<div class="step"><div class="step-num">💌</div><div>รวมเพลงสากล เทสดี</div></div>
-<a href="https://youtube.com/playlist?list=PLxzyv_DPfUCl3pAj5a4UFqxQhR3VLoL8c&si=VWJDXd9FmzBX1BET" class="btn btn-main" style="margin-bottom:15px;">ฟังเพลงสากล</a>
+<div class="step"><div class="step-num">💌</div><div><a href="https://youtube.com/playlist?list=PLxzyv_DPfUCl3pAj5a4UFqxQhR3VLoL8c&si=VWJDXd9FmzBX1BET" style="text-decoration:none; color:inherit;">รวมเพลงสากล เทสดี</a></div></div>
+<div class="step"><div class="step-num">🎵</div><div><a href="https://youtube.com/playlist?list=PLxzyv_DPfUCkhZR5rLBzfyrxTcjYzx8oc&si=le4f8j9QqKBzdePW" style="text-decoration:none; color:inherit;">รวมเพลงไทย</a></div></div>
+<div class="step"><div class="step-num">🎧</div><div><a href="https://open.spotify.com/playlist/38ExmI7QMnjFVUH4dEBfRV?si=RskK5axtRSG1K6hWOr9UWQ&pi=FhQtRruQTcKgn" style="text-decoration:none; color:inherit;">Spotify Playlist</a></div></div>
 
-<div class="step"><div class="step-num">🎧</div><div>รวมเพลงไทย</div></div>
-<a href="https://youtube.com/playlist?list=PLxzyv_DPfUCkhZR5rLBzfyrxTcjYzx8oc&si=le4f8j9QqKBzdePW" class="btn btn-main">ฟังเพลงไทย</a>
+<a href="https://youtube.com/playlist?list=PLxzyv_DPfUCl3pAj5a4UFqxQhR3VLoL8c" class="btn btn-main">ฟังเพลงทั้งหมด</a>
 </div>
 
 <div class="section">
-<h2>🐈‍⬛𓂂 แนะนำซีรีส์ & สุขภาพ</h2>
+<h2>📍 🐈‍⬛𓂂 แนะนำซีรีส์</h2>
 
-<div class="price-row"><span>ซีรีส์ จีน ไทย เกาหลี</span><span class="price-tag">New</span></div>
-<div class="price-row"><span>ออกกำลังกาย คลายเครียด</span><span class="price-tag">g🥚🥚d</span></div>
-<div class="price-row"><span>ร้องเพลงและเต้น</span><span class="price-tag">Healthy</span></div>
+<div class="price-row"><span>รวมซีรีส์ใหม่ๆ</span><span class="price-tag">จีน</span></div>
+<div class="price-row"><span>แนว Romantic</span><span class="price-tag">ไทย</span></div>
+<div class="price-row"><span>แนว Drama</span><span class="price-tag">เกาหลี</span></div>
 
-<a href="https://youtube.com/playlist?list=PLloo9plTQMH5-NyyaUKxtdEFL_Ek_ESPWf&si=uZldgDkpTEytl8yI" class="btn btn-main">⊹🍮 ออกกำลังกาย</a>
-<a href="https://youtube.com/playlist?list=PLloo9plTQMH5-kcRS2rJKBR9P-Engulz3q&si=EmSuimBzu-tavqFS" class="btn btn-main">⊹🍒 ร้องเพลงและเต้น</a>
+<a href="https://drive.google.com/file/d/1ay2fmsQacHulxzCX74mPR4N5JRTWH3Xm/view?usp=drivesdk" class="btn btn-main">ดูรายการซีรีส์</a>
+</div>
+
+<div class="section">
+<h2>📝 สุขภาพและกิจกรรม</h2>
+<p style="font-size: 14px; margin-bottom: 15px; color: var(--dark);">รวมคลิปออกกำลังกายและเต้นเพื่อสุขภาพ 𓂋 g🥚🥚d ✿</p>
+
+<div class="step"><div class="step-num">🍥</div><div><a href="https://youtube.com/playlist?list=PLoo9plTQMH5-NyyaUKxtdEFL_Ek_ESPWf&si=uZldgDkpTEytl8yI" style="text-decoration:none; color:inherit;">ออกกำลังกาย คลายเครียด</a></div></div>
+<div class="step"><div class="step-num">💃</div><div><a href="https://youtube.com/playlist?list=PLoo9plTQMH5-kcRS2rJKBR9P-Engulz3q&si=EmSuimBzu-tavqFS" style="text-decoration:none; color:inherit;">ร้องเพลงและเต้น</a></div></div>
 </div>
 
 <div class="footer">
 <a href="https://lin.ee/PdNrw0w" class="btn btn-main">📱 ติดต่อสอบถาม Line 🎀</a>
 
 <div class="socials">
-<a href="https://open.spotify.com/playlist/38ExmI7QMnjFVUH4dEBfRV?si=RskK5axtRSG1K6hWOr9UWQ&pi=FhQtRruQTcKgn">Spotify</a>
+<a href="#">Facebook</a>
 <a href="#">Instagram</a>
-<a href="https://lin.ee/PdNrw0w">Line</a>
+<a href="https://lin.ee/PdNrw0w">LINE</a>
 </div>
 
 <p class="small">
